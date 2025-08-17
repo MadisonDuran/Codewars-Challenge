@@ -121,3 +121,45 @@ function answer3(){
 //For task 2 it was easy. 
 // How I found the solutions was by re-reading those prompts a couple times and answrering those
 //questions with a yes or no answer.
+
+// 4. Task
+//I've written five functions. Each function receives a parameter arr which is an array. 
+// Complete the functions using arr inside the function bodies.
+
+   // 1. getLength(arr)    should return length of arr
+  //  2. getFirst(arr)     should return the first element of arr
+  //  3. getLast(arr)      should return the last element of arr
+  //  4. pushElement(arr)  should push an element to arr, and then return arr
+  //  5. popElement(arr)   should pop an element from arr, and then return arr
+//When you have finished the work, click "Run Tests" to see if your code is working properly.
+//In the end, click "Submit" to submit your code pass this kata.
+function getLength(arr){
+  //return length of arr
+  return arr.length;
+}
+function getFirst(arr){
+  //return the first element of arr
+  return arr.at(0);
+}
+function getLast(arr){
+  //return the last element of arr
+  return arr.at(-1);
+}
+function pushElement(arr){
+  var el=1;
+  arr.push(1);
+  return arr;
+}
+function popElement(arr){
+ arr.pop();
+  return arr;
+}
+
+// This problem is easy/medium.
+// How I found my solution was by re-reading the instructions and reading over the functions
+// Using the .length property to count the length of the parameter arr and returning it
+// Using the .at(0) method to get the first character of the parameter arr and returning it
+// Using the .at(-1) method to get the last character of the parameter arr and returning it
+// Using the .push method to push 1 into the arr and returning arr
+// Using .pop method to remove a element from arr and return arr.
+
