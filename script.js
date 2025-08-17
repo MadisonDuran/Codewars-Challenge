@@ -182,3 +182,27 @@ function animal(obj){
 // I added more spaces after the words 'This, has, legs' 
 // Then ran my code and it passed
 
+// 6. Task
+//Coding in function trueOrFalse, function accept 1 parameters:val, 
+// try to use the conditional statement if...else, if val value is false 
+// (val==false or it can convert to false), should return a string "false", if not, return a string "true".
+//When you have finished the work, click "Run Tests" to see if your code is working properly.
+//In the end, click "Submit" to submit your code pass this kata.
+
+function trueOrFalse(val){
+  if (val) {
+  return 'true';  
+  }              
+  else {
+    return 'false';
+  }
+}
+
+// This problem was pretty easy.
+// I had to give this a few tries. 
+// I forgot to put the curly braces after the if else statements
+// and I did some extra steps like if (val == true), (val == false)
+// In this problem you are just checking if 'val' is true or false.
+// Created a if/statement, if val is true it's going to return true
+// else the function will return false
+
