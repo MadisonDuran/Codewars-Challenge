@@ -240,3 +240,65 @@ function saleHotdogs(n){
 // Then you will start with your if else statements 
 // if the conditions are met then you mutiply in by $1, $0.95, $0.90.
 // Then at the end return the money that was made.
+
+// 8. Task
+//Complete the function howManydays. It accepts 1 parameter month, 
+// which means the month of the year. Different months have a different 
+// number of days as shown in the table below. Return the number of days 
+// that are in month. There is no need for input validation: month will 
+// always be greater than 0 and less than or equal to 12.
+//+---------------+-------------+
+//|    month      |    days     |
+//+---------------+-------------+
+//|1,3,5,7,8,10,12|     31      |
+//+---------------+-------------+
+//|4,6,9,11       |     30      |
+//+---------------+-------------+
+//|2              |     28      |  (Do not consider the leap year)
+//+---------------+-------------+
+//Tip: Using default for most of the cases can reduce your work.
+//When you have finished, click "Test" to test your code against 
+// initial tests and "Attempt" to test your code against all tests. 
+// If you pass in all tests you can click "Submit" to submit your code.
+
+  function howManydays(month){
+  let days="";
+  switch (month){
+  /*this is the months which has 31 days*/
+  case 1:
+  case 3:
+  case 5:
+  case 7:
+  case 8:
+  case 10:
+  case 12:
+  days=31
+  break;
+  /*this is the months which has 30 days*/
+  case 4:
+  case 6:
+  case 9:
+  case 11:
+  days=30
+  break;
+  /*this is the months which has 28 days  */
+  case 2:
+  days=28;
+  break;
+  }
+  return days;
+}
+
+// I thought the function was easy/medium.
+// It was a few more steps.
+// I had to run through this a few times because it was a lot of info to input.
+// How I solved this was reading the task thouroughly and I used some switch statments 
+// in one of my projects so I went back and looked at that for an example of how to use it.
+// First you call the function howManyDays with the parameter month.
+// Then you declare a empty days variable.
+// Then use your switch statment for months, you are switching betweeen each month
+// Case 1, 3, 5 , 7, 8, 10, 12 have 31 days in the month.
+// Case 4,6,9,11, have 30 days in a month
+// Case 2 has 28 days. Make sure to put the breaks in between those sections or the switch case will keep running 
+// and the code will break.
+// return days
