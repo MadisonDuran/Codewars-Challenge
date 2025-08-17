@@ -163,3 +163,22 @@ function popElement(arr){
 // Using the .push method to push 1 into the arr and returning arr
 // Using .pop method to remove a element from arr and return arr.
 
+// 5. Task
+//Give you a function animal, accept 1 parameter:obj like this:
+//{name:"dog",legs:4,color:"white"}
+//and return a string like this:
+//"This white dog has 4 legs."
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+//  This problem was easy/medium 
+// How I found the solution was looking back at the task instructions
+// This took me a few tries to get right.
+// I made an object with the properties {name: dog, color: white, legs: 4}
+// I would run the tests and it didn't run
+// I added the my object properties inside the strong inside the ${}
+// Then I returned the string wrong I didn't put enough spaces.
+// I added more spaces after the words 'This, has, legs' 
+// Then ran my code and it passed
+
