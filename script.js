@@ -206,3 +206,37 @@ function trueOrFalse(val){
 // Created a if/statement, if val is true it's going to return true
 // else the function will return false
 
+//Task 7:
+//Complete function saleHotdogs/SaleHotDogs/sale_hotdogs, function 
+// accepts 1 parameter:n, n is the number of hotdogs a customer will 
+// buy, different numbers have different prices (refer to the following table), 
+// return how much money will the customer spend to buy that number of hotdogs.
+//number of hotdogs	price per unit (cents)
+//n < 5	100
+//n >= 5 and n < 10	95
+//n >= 10	90
+//You can use if..else or ternary operator to complete it.
+//When you have finished the work, click "Run Tests" to see if your code is working properly.
+//In the end, click "Submit" to submit your code and pass this kata.
+function saleHotdogs(n){
+  let money = 0;
+  if (n < 5 ) {
+    money = n * 100
+  }
+  else if ( n >= 5 && n < 10 ) {
+    money = n * 95
+  }
+  else if ( n >= 10 )  {
+   money = n * 90 
+  }
+  return money;
+}
+// This problem is pretty straightforward and easy.
+// I had to code this a few times to get the syntax correct.
+// I also used decimal point at first when multiplying n to the price of the hotdogs.
+// How I found the solution was by reading through the instructions thoroughly and trying it few times.
+// First you are going to create a function called saleHotdogs with a parameter n
+// the you are going to declare the money variable and set it to 0
+// Then you will start with your if else statements 
+// if the conditions are met then you mutiply in by $1, $0.95, $0.90.
+// Then at the end return the money that was made.
